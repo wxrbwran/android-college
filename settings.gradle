@@ -12,6 +12,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+
+
 rootProject.name = "study-app"
 include ':app'
 include ':common'
