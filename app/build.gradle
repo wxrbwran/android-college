@@ -6,18 +6,10 @@ plugins {
 apply from: this.rootProject.file("dependencies.gradle")
 
 android {
-    namespace 'com.xiaoran.app'
+    namespace 'com.xiaoran.study'
     defaultConfig {
-        applicationId "com.xiaoran.app"
+        applicationId "com.xiaoran.study"
     }
-
-    dataBinding {
-        enabled = true
-    }
-//    buildFeatures {
-//        viewBinding = true
-//        dataBinding = true
-//    }
 }
 
 dependencies {
