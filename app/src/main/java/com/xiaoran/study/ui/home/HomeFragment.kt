@@ -5,14 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.xiaoran.study.R
 import com.xiaoran.study.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
+//    private var dbinding: ViewDataBinding? = null;
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -26,6 +29,8 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+//        dbinding =
+//            activity?.let { DataBindingUtil.setContentView<FragmentHomeBinding>(it, R.layout.fragment_home) };
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
